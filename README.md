@@ -1,1 +1,1 @@
-# bootstrap
+# Projekt about analog pictures.
