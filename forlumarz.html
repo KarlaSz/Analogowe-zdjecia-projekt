@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Analogowe zdjęcia - Album z Portfolio Karoliny</title>
+	<meta name="description" content="Przed Tobą album moich najlepszych zdjęć analogowych, które z pasją wykonałam starymi apratami analogowymi. Uczta dla wielbicieli tradycyjnej fotografii. Fotografia analogowa to obserwacja świata i zabawa światłem.">
+	<meta name="keywords" content="fotografia, analogowy aparat, album, top zdjęcia, stara fotografia, film, analog, album, portfolio, foty analogowe, zdjęcia, zenit, praktica, vintage zdjęcia, filmy analogowe, shoot, 135mm, 35, kodak zdjęcia, fuji film, fuji zdjęcia, C-41, skanowanie zdjęć, skan zdjęcia, analog, galeria zdjęć, przykłady zdjęć analogowych, nauka o analogach>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="author" content="Karolina Szymaszkiewicz">
+	<link rel="stylesheet"  href="style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<script src="timer.js"></script>
+</head>
+
+<body onload="odliczanie();">
+
+	<header>
+
+<!-- LOGO start -->
+			<div class="rectangle">
+			
+				<div id="logo">
+				
+					<img  src="img/logo-analog.png" style="transform: scale(1);" alt="Logo strony Analogowe.pl czarno-pomara\nczowy napis."/>
+					
+				</div>
+				
+				<div id="zegar"> 12:00:00 </div>
+				<div style="clear:both;"></div>
+				
+			</div>
+<!-- LOGO end -->
+
+<!-- Nawigacja start -->
+		<nav>
+		
+			<div class="topnav">
+			
+				<ul class="menu">
+					<li><a href="analogowe-zdjecia"  title="Wiedza na temattechniki analogowej">Home</a>
+					</li>
+					<li><a href="galeria"  title="Gelria zdjęć analogowych">Galeria</a>
+					</li>
+					<li> <a href="sprzet-analogowy" title="Sprzęt analogowy">Sprzęt</a>
+					</li>
+					<li><a href="filmy" title="Filmy">Filmy</a>
+					</li>
+				</ul>
+				
+			</div>
+			
+		</nav>
+<!-- Nawigacja end -->
+	</header>
+<!-- HEADER end -->
+
+				
+					<div class="content">
+					
+						<header>
+							<h1>Wyposażenie </h1>
+						
+						</header>
+
+					</div>
+					
+<!--All main content start-->				
+					<div class="content">	
+						<main>
+		
+							<article>
+
+								<form action="order.php" method="post" enctype="multipas/form-data">
+								
+									<div class="row">
+								
+										<fieldset>
+											<legend>Rodzaj wyposażenia</legend>
+										
+											<div><label><input type="radio" value="1" name="waposazenie" checked>Plecak</label>
+											</div>
+											
+											<div><label><input type="radio" value="2" name="waposazenie">Obiektyw</label>
+											</div>
+											
+											<div><label><input type="radio" value="3" name="waposazenie">Statyw</label>
+											</div>
+										
+										</fieldset>
+										
+									</div>
+									
+									<div class="row">
+										<label for="aparat">Trójkąt ekspozycji</label>
+										<select id="aparat" name="aparat">
+											
+											<option value="i">ISO</option>
+											<option value="m">Migawka</option>
+											<option value="p" selected>Przysłona</option>
+											<option value="o">Ostrość</option>
+										
+										</select>
+										
+									</div>	
+									
+									<div class="row">
+									
+										<fieldset>
+										
+										<legend>Rodzaj filmu</legend>
+											<div><label><input type="checkbox" name="typ[] "value="1" checked disabled>negatyw</label></div>
+											<div><label><input type="checkbox" name="typ[] value="2">czarno-biały</label></div>
+											<div><label><input type="checkbox" name="typ[] value="3">lamo</label></div>
+											<div><label><input type="checkbox" name="typ[] value="4" checked disabled>color</label></div>
+											<div><label><input type="checkbox" name="typ[] value="5">przeterminowana</label></div>
+										
+										</fieldset>
+									
+									</div>
+									
+									<div class="row">
+										<label for="obiektyw">Wybór obiektywu</label>
+										
+										<div style="margin-top:10px;">
+										<select id="obiektyw" name="obiektyw[]" multiple>
+											
+											<option value="t">teleobiektyw</option>
+											<option value="m">macro</option>
+											<option value="p" selected>portretowy</option>
+											<option value="u">uniwersalny</option>
+										
+										</select>
+										</div>
+										
+									</div>	
+									
+									<div class="row">
+										<label>Imię <input type="text" name="imie" placeholder="wpisz imię"></label>
+										<label>Hasło <input type="password" name="haslo"></label>
+										<label>Szukaj <input type="search" name="fraza" placeholder="czego szukasz?"></label>
+										
+									</div>	
+									
+									<div class="row">
+									
+									<label>Ile filmów chcesz otrzymac <input name="film" type="number" step="1"></label>
+									
+									</div>
+									
+									
+									<div class="row">
+									<label>Adres email <input type="email" name="adres" required></label>
+									<label>Numer telefonu <input type="tel" name="telefon" required></label>
+									</div>
+									
+									
+									<div class="row">
+									<label>Data dostawy <input type="date" name="date" ></label>
+									<label>Czas dostaw <input type="time" name="time" step="1" value="13:00" readonly></label>
+									
+									</div>
+									
+									<div class="row">
+									<div><label for="comment">Uwagi do zamówienia</label></div>
+									<textarea name="comment" id="comment" rows="4" cols="80"maxlength="25" minlength="10"></textarea>
+									</div>
+									
+									
+									<div class="row">
+									<label>Wyślij zdjęcie uszkodzone produktu</label><input type="file" name="obraz" accept="image/x-png,image/gig,image/jpeg" multiple>
+									</div>
+									
+									
+									<div class="row">
+									
+									<label>Rodzaj miodu <input name="color" type="color" step="1"value="#ff0000"></label>
+									
+									</div>
+									
+									<div class="row">
+									<label>Stopień realizacji zamówienia </label><progress id="realizacja"max="100" value="75"></progress>
+									</div>
+									
+									<div class="row">
+									<label>Stopień wypełnienia miodu </label><meter min="0" max="100" title="procent" value="20" low="30" high="70" optimum="75"></meter>
+									</div>
+									
+									<div class="row">
+									<label>Twoja strona www </label><input type="url" name="page" placeholder="http://...">
+									</div>
+									
+									<input type="hidden" name="token" value="12edcvrtg45gvsdv3">
+									
+									<div class="row">
+									<input type="submit" value="Wyślij">
+									<input type="reset" value="Wyczyść wszystko">
+
+									</div>
+									
+									
+									
+
+ 
+								</form>
+								
+							</article>
+							
+						</main>
+					</div>	
+ 
+  <!--START Sekcja blokow-->
+				<section>
+				    <div class="content">
+					
+						 <div id="sekcja">
+								<div class="blok">
+										<p style="margin-bottom: 60px;">Chcesz dowiedzieć się <br/>więcej o technice czy sprzęcie? </p>
+								 <div class="button" >Czytaj więcej</div>
+								</div>
+
+								<div class="blok">
+										<p style="margin-bottom: 60px;">Odkryj świat filmów analogowych. <br/>Poznaj ich specyfikacje i przeznaczenie</p>
+								 <div class="button">Filmy</div>
+								</div>
+
+								<div class="blok">
+										<p style="margin-bottom: 60px;">Idź na skróty<br/> i zobacz całą galerię zdjęć</p>
+								 <div class="button">Galeria</div>
+								</div>
+						</div>
+					</div>
+				</section>
+<!--END Sekcja blokow-->
+		</article>
+		
+	</main>
+<!--All main content end-->
+
+<!-- Footer start -->
+		<footer>
+			<hr>
+			<section>
+				<div id="footer">
+					<div class="footertxt">
+							<p style="font-size:13px; display: inline;">Wszelkie prawa  zastrzeżone   &copy; 2020</p> 
+					</div>
+					<div class="footertxt">
+							<h5 style="display: inline; ">Made by Karolina Szymaszkiewicz </h5>
+					 </div>
+					  <div class="footertxt">
+							<p style="font-size:13px; display: inline; ">e-mail: <a href="mailto:"szymaszkiewiczk@gmail.com">szymaszkiewiczk@gmail.com</a></p> 
+					 </div>
+							<div style="clear:both;"></div>
+				</div>
+			</section>
+		</footer>
+<!-- Footer end -->
+
+</body>
+
+</html>
